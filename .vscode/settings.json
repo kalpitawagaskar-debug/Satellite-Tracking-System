@@ -1,0 +1,6 @@
+{
+  "python.testing.unittestEnabled": true,
+  "python.testing.unittestArgs": ["-v", "-s", "./tests", "-p", "test_*.py"],
+  "python.analysis.extraPaths": ["./ui"],
+  "files.exclude": { "**/__pycache__": true }
+}

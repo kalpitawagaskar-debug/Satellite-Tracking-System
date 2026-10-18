@@ -1,0 +1,61 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SomaiyaSat: demo (no internet)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "args": [
+        "--demo"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "SomaiyaSat: demo, skip splash",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "args": [
+        "--demo",
+        "--no-splash"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "SomaiyaSat: CubeSat CO-57 (offline ok)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "args": [
+        "--norad",
+        "27848",
+        "--no-splash"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "SomaiyaSat: ISS (live TLE, falls back to archived)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "args": [
+        "--norad",
+        "25544"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "UI panels preview (simulated)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/ui/demo_new_panels.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/ui"
+    }
+  ]
+}

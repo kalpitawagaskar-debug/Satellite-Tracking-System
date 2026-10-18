@@ -1,0 +1,9 @@
+.venv/
+venv/
+__pycache__/
+*.db
+*.db-wal
+*.db-shm
+*.log
+*.zip
+data/tle_cache/
